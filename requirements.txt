@@ -1,0 +1,7 @@
+joblib
+nilearn
+numpy
+scipy==1.2.0
+statsmodels==0.10.0rc2
+duecredit
+jupyter
