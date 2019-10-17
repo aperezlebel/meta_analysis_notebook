@@ -1,6 +1,11 @@
+# Meta Analysis Notebook
 
+In neuroimaging, meta-analysis is an essential tool to increase data power and to face the recurrent issue of the reproductibility of studies which are often conducted on a small number of subjects.
+This notebook gathers and explains some well known meta-analysis techniques, discusses their limitations and applies them to real fMRI data.
 
-Creating a virtual environment to install requirements is recommended:
+## Installation
+To be able to run the notebook, the following steps are recommended:
+1. Create a virtual environment and install requirements.
 
 ```
 cd /path/to/repo
@@ -10,11 +15,11 @@ pip install -r requirements.txt
 pip install -r requirements_git.txt
 ```
 
-Then, create a jupyter kernel of the virtual environment and launch jupyter:
+2. Create a jupyter kernel of the virtual environment and launch the notebook.
 
 ```
 python -m ipykernel install --user --name=venv_meta
-jupyter notebook
+jupyter notebook notebook.ipynb
 ```
 
-Once openned the notebook, change the kernel to venv_meta.
+3. Once openned the notebook, **change the kernel to venv_meta**.
