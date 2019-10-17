@@ -1,0 +1,10 @@
+data-narps
+venv
+.env
+nipy
+*_cache*
+*cache_*
+.*
+brain_mapping
+save
+!.git*
