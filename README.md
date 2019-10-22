@@ -3,7 +3,13 @@
 In neuroimaging, meta-analysis is an essential tool to increase data power and to face the recurrent issue of the reproductibility of studies which are often conducted on a small number of subjects.
 This notebook gathers and explains some well known meta-analysis techniques, discusses their limitations and applies them to real fMRI data.
 
-## Installation
+Two choices are available to you whether you want to be able to rerun the notebook.
+
+## Viewing only
+Just view the notebook without the possibility of running it here:
+https://nbviewer.jupyter.org/github/alexprz/meta_analysis_notebook/blob/master/notebook.ipynb
+
+## Installation (view and run)
 To be able to run the notebook, the following steps are recommended:
 1. Create a virtual environment and install requirements.
 
