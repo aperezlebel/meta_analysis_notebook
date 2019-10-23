@@ -1,4 +1,5 @@
-data-narps
+data/*
+!data/sim
 venv
 .env
 nipy
