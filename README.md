@@ -17,9 +17,10 @@ To be able to run the notebook, the following steps are recommended:
 cd /path/to/repo
 python3 -m venv venv
 source venv/bin/activate
-pip install -r requirements.txt
-pip install -r requirements_git.txt
+xargs -L 1 pip install < requirements.txt
 ```
+
+**NB:** Some packages (e.g nipy) have `setup_requires` type of requirements, which requires to have other packages already installed before being able to install dependencies. We thus need to install packages in a specific order, but the habitual `pip install -r requirements.txt` does not preserve order, hence the use of the workaround `xargs -L 1 pip install < requirements.txt`.
 
 2. Create a jupyter kernel of the virtual environment and launch the notebook.
 

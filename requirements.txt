@@ -5,3 +5,5 @@ scipy==1.2.0
 statsmodels==0.10.0rc2
 duecredit
 jupyter
+git+https://github.com/neurostuff/NiMARE.git#egg=nimare[peaks2maps-cpu]
+git+https://github.com/alexprz/nipy.git
