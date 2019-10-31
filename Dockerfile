@@ -90,12 +90,27 @@ RUN export PATH="/opt/miniconda-latest/bin:$PATH" \
 
 RUN bash -c 'source activate neuro_py36 && git clone https://github.com/alexprz/nipy.git && cd nipy && python setup.py install'
 
-RUN test "$(getent passwd neuro)" || useradd --no-user-group --create-home --shell /bin/bash neuro
-USER neuro
+ARG NB_USER=jovyan
+ARG NB_UID=1000
+ENV USER ${NB_USER}
+ENV NB_UID ${NB_UID}
+ENV HOME /home/${NB_USER}
+
+RUN adduser --disabled-password \
+    --gecos "Default user" \
+    --uid ${NB_UID} \
+    ${NB_USER}
+
+RUN test "$(getent passwd $NB_USER)" || useradd --no-user-group --create-home --shell /bin/bash ${NB_USER}
+
+COPY . ${HOME}
+USER root
+RUN chown -R ${NB_UID} ${HOME}
+USER ${NB_USER}
 
 RUN mkdir -p ~/.jupyter && echo c.NotebookApp.ip = \"0.0.0.0\" > ~/.jupyter/jupyter_notebook_config.py
 
-WORKDIR /home/neuro
+WORKDIR /home/${NB_USER}
 
 CMD ["jupyter", "notebook"]
 
@@ -169,3 +184,6 @@ RUN echo '{ \
     \n    ] \
     \n  ] \
     \n}' > /neurodocker/neurodocker_specs.json
+
+
+
