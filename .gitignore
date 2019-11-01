@@ -9,3 +9,4 @@ nipy
 brain_mapping
 save
 !.git*
+generate.sh
