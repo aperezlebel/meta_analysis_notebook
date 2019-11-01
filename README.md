@@ -1,16 +1,33 @@
 # Meta Analysis Notebook
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/alexprz/meta_analysis_notebook/master?filepath=notebook.ipynb)
+
 In neuroimaging, meta-analysis is an essential tool to increase data power and to face the recurrent issue of the reproductibility of studies which are often conducted on a small number of subjects.
 This notebook gathers and explains some well known meta-analysis techniques, discusses their limitations and applies them to real fMRI data.
 
-Two choices are available to you whether you want to be able to rerun the notebook.
+Two choices are available to you to run interactively the notebook: remotely and localy.
 
-## Viewing only
-Just view the notebook without the possibility of running it here:
-https://nbviewer.jupyter.org/github/alexprz/meta_analysis_notebook/blob/master/notebook.ipynb
+## 1. Remotely
+You can run the notebook interactively on Binder:
+https://mybinder.org/v2/gh/alexprz/meta_analysis_notebook/master?filepath=notebook.ipynb
 
-## Installation (view and run)
-To be able to run the notebook, the following steps are recommended:
+## 2. Localy
+To be able to run the notebook localy, two choices are available.
+
+### 2.1 Using Docker (recommended)
+
+1. Get this repository: `$ git clone https://github.com/alexprz/meta_analysis_notebook`
+2. Go to the repo: `$ cd meta_analysis_notebook`
+3. Build the docker image: `$ docker build -t notebook .`
+4. Start the docker container: `$ docker run -it --rm -p 8888:8888 notebook`
+
+### 2.2 Manual install (requires FSL on your computer)
+
+0. Install FSL (optional)
+
+Some functions (e.g Multi Level GLM) implemented in NiMARE need FSL installed on your computer. Since you still can run the other parts without FSL, this step is optional.
+You can find [here](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation) the installation procedure.
+
 1. Create a virtual environment and install requirements.
 
 ```
@@ -30,3 +47,5 @@ jupyter notebook notebook.ipynb
 ```
 
 3. Once openned the notebook, **change the kernel to venv_meta**.
+
+
