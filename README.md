@@ -11,7 +11,7 @@ Two choices are available to you to run interactively the notebook: remotely and
 You can run the notebook interactively on Binder:
 https://mybinder.org/v2/gh/alexprz/meta_analysis_notebook/master?filepath=notebook.ipynb
 
-## 2. locally
+## 2. :Locally
 To be able to run the notebook locally, two choices are available.
 
 ### 2.1 Using Docker (recommended)
