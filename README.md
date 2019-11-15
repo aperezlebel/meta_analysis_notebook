@@ -5,14 +5,14 @@
 In neuroimaging, meta-analysis is an essential tool to increase data power and to face the recurrent issue of the reproductibility of studies which are often conducted on a small number of subjects.
 This notebook gathers and explains some well known meta-analysis techniques, discusses their limitations and applies them to real fMRI data.
 
-Two choices are available to you to run interactively the notebook: remotely and localy.
+Two choices are available to you to run interactively the notebook: remotely and locally.
 
 ## 1. Remotely
 You can run the notebook interactively on Binder:
 https://mybinder.org/v2/gh/alexprz/meta_analysis_notebook/master?filepath=notebook.ipynb
 
-## 2. Localy
-To be able to run the notebook localy, two choices are available.
+## 2. locally
+To be able to run the notebook locally, two choices are available.
 
 ### 2.1 Using Docker (recommended)
 
@@ -26,7 +26,7 @@ To be able to run the notebook localy, two choices are available.
 0. Install FSL (optional)
 
 Some functions (e.g Multi Level GLM) implemented in NiMARE need FSL installed on your computer. Since you still can run the other parts without FSL, this step is optional.
-You can find [here](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation) the installation procedure.
+You can find the installation procedure [here](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation).
 
 1. Create a virtual environment and install requirements.
 
