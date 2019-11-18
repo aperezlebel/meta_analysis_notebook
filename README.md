@@ -20,7 +20,7 @@ To be able to run the notebook locally, two choices are available.
 2. Go to the repo: `$ cd meta_analysis_notebook`
 3. Build the docker image: `$ docker build -t notebook .`
 4. Start the docker container: `$ docker run -it --rm -p 8888:8888 notebook`
-5. Connect to the notebook through port 8888 using a browser ([localhost:8888](localhost:8888)).
+5. Connect to the notebook using a browser and the link displayed in your terminal (should look like http://localhost:8888/?token=sometoken).
 
 ### 2.2 Manual install (requires FSL on your computer)
 
