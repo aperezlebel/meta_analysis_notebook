@@ -72,7 +72,7 @@ RUN export PATH="/opt/miniconda-latest/bin:$PATH" \
            "python=3.6" \
            "joblib" \
            "nilearn" \
-           "numpy" \
+           "numpy==1.16.4" \
            "scipy==1.2.0" \
            "jupyter" \
     && sync && conda clean --all && sync \
@@ -144,7 +144,7 @@ RUN echo '{ \
     \n          "python=3.6", \
     \n          "joblib", \
     \n          "nilearn", \
-    \n          "numpy", \
+    \n          "numpy==1.16.4", \
     \n          "scipy==1.2.0", \
     \n          "jupyter" \
     \n        ], \
@@ -185,6 +185,3 @@ RUN echo '{ \
     \n    ] \
     \n  ] \
     \n}' > /neurodocker/neurodocker_specs.json
-
-
-
