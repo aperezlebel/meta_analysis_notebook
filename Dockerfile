@@ -72,7 +72,7 @@ RUN export PATH="/opt/miniconda-latest/bin:$PATH" \
            "python=3.6" \
            "joblib" \
            "nilearn" \
-           "numpy==1.16.4" \
+           "numpy==1.17.2" \
            "scipy==1.2.0" \
            "jupyter" \
     && sync && conda clean --all && sync \
@@ -144,7 +144,7 @@ RUN echo '{ \
     \n          "python=3.6", \
     \n          "joblib", \
     \n          "nilearn", \
-    \n          "numpy==1.16.4", \
+    \n          "numpy==1.17.2", \
     \n          "scipy==1.2.0", \
     \n          "jupyter" \
     \n        ], \
