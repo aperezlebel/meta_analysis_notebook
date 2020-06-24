@@ -5,7 +5,9 @@
 In neuroimaging, meta-analysis is an essential tool to increase data power and to face the recurrent issue of the reproductibility of studies which are often conducted on a small number of subjects.
 This notebook gathers and explains some well known meta-analysis techniques, discusses their limitations and applies them to real fMRI data.
 
-Two choices are available to you to run interactively the notebook: remotely and locally.
+If you want a **quick look** at the notebook, you can look at a non-interactive version by clicking the executed [notebook.ipynb](https://github.com/alexprz/meta_analysis_notebook/blob/master/notebook.ipynb) in this repository.
+
+Two choices are available to you to run the notebook **interactively**: remotely and locally.
 
 ## 1. Remotely
 You can run the notebook interactively on Binder:
@@ -48,5 +50,3 @@ jupyter notebook notebook.py
 ```
 
 3. Once openned the notebook, **change the kernel to venv_meta**.
-
-
