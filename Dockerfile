@@ -84,6 +84,7 @@ RUN export PATH="/opt/miniconda-latest/bin:$PATH" \
              "sympy" \
              "nipy" \
              "jupytext" \
+             "matplotlib==3.1.0"\
              "git+https://github.com/neurostuff/NiMARE.git#egg=nimare[peaks2maps-cpu]"" \
     && rm -rf ~/.cache/pip/* \
     && sync \
@@ -154,7 +155,9 @@ RUN echo '{ \
     \n          "duecredit", \
     \n          "sympy", \
     \n          "nipy", \
-    \n          "git+https://github.com/neurostuff/NiMARE.git#egg=nimare[peaks2maps-cpu]" \
+    \n          "jupytext", \
+    \n          "matplotlib==3.1.0", \
+    \n          "git+https://github.com/neduecrediturostuff/NiMARE.git#egg=nimare[peaks2maps-cpu]" \
     \n        ], \
     \n        "create_env": "neuro_py36", \
     \n        "activate": true \
